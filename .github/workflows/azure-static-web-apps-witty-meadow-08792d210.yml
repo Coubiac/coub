@@ -21,8 +21,8 @@ jobs:
           lfs: false
       - name: Install Hugo latest
         run: |
-          wget https://github.com/gohugoio/hugo/releases/latest/download/hugo_extended_Linux-64bit.tar.gz
-          tar -xvzf hugo_extended_Linux-64bit.tar.gz
+          wget https://github.com/gohugoio/hugo/releases/download/v0.145.0/hugo_extended_0.145.0_Linux-64bit.tar.gz 
+          tar -xvzf hugo_extended_0.145.0_Linux-64bit.tar.gz
           mv hugo /usr/local/bin/hugo
       - name: Build And Deploy
         id: builddeploy
